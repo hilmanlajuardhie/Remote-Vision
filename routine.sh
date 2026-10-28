@@ -6,6 +6,8 @@ echo "\n----- apt autoremove && Clean -----";
 sudo apt autoremove --purge -y;
 sudo apt clean;
 echo "\n----- snap refresh -----";
+#sudo killall snap-store
+#sudo snap refresh snap-store;
 sudo snap refresh;
 #echo "\n----- rm Journcalctl && cache folder -----";
 #sudo journalctl --vacuum-time=3d;
